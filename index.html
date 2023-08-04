@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delta State University Of Science and Technology, Ozoro</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <img src="images/logo 2.jpeg" alt="this is a logo" height="100px" width="250px" class="logo">
+
+            <ul class="links">
+                <li> <a href="#hero">Home</a></li>
+                <li> <a href="#About">About</a></li>
+                <li> <a href="#Administration">Administration</a></li>
+                <li> <a href="#Faculties">Faculties</a></li>
+                <li> <a href="#portal">portal</a></li>
+                <li> <a href="#contact">contact</a></li>
+            </ul>
+
+            <div class="toggle-btn">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <li> <a href="#hero">Home</a></li>
+            <li> <a href="#About">About</a></li>
+            <li> <a href="#Administration">Administration</a></li>
+            <li> <a href="#Faculties">Faculties</a></li>
+            <li> <a href="#portal">portal</a></li>
+            <li> <a href="#contact">contact</a></li>
+        </div>
+    </header>
+
+    <div class="content">
+        <h1>Welcome to <br><span>Delta state University of Science & <br>Technology, Ozoro</span></h1>
+
+        <a href="#" class="motto">INNOVATION & CREATIVITY</a>
+        
+        <div class="about">
+            <h2>About</h2>
+
+            <P> The Delta State University of Science and Technology, 
+                Ozoro is one of the three institutions of higher learning 
+                established by the Delta State Government in 2021. The two others are: 
+                Dennis Osadebay University, Asaba, University of Delta, Agbor. 
+            </P>
+        </div>
+
+        <div class="button">
+            <a href="#" class="info-btn">More information</a>
+        </div>
+
+    </div>
+
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle-btn')
+        const toggleBtnIcon = document.querySelector('.toggle-btn i')
+        const dropDown = document.querySelector('.dropdown')
+
+
+        toggleBtn.onclick = function () {
+            dropDown.classList.toggle('open')
+
+           toggleBtnIcon.className = dropDown.classList.contains('open')
+            ? 'fa fa-xmark'
+            : 'fa fa-bars'
+        }
+    </script>
+
+
+</body>
+</html>
